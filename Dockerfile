@@ -12,7 +12,7 @@ RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
     /bin/bash /Miniconda3-$(cat miniconda-version)-Linux-x86_64.sh -b -p /opt/conda && \
     rm Miniconda3-$(cat miniconda-version)-Linux-x86_64.sh && \
     /opt/conda/bin/conda install --yes conda==$(cat conda-version) && \
-    conda clean --tarballs
+    /opt/conda/bin/conda clean --tarballs
 
 
 ENV PATH /opt/conda/bin:$PATH
