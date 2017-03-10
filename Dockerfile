@@ -20,7 +20,4 @@ ENV PATH /opt/conda/bin:$PATH
 # > At the moment, setting "LANG=C" on a Linux system *fundamentally breaks Python 3*, and that's not OK.
 ENV LANG C.UTF-8
 
-RUN conda config --add channels conda-forge && \
-    conda config --set channel_priority false
-
 CMD ["python"]
