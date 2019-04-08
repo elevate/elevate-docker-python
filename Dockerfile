@@ -1,4 +1,4 @@
-FROM buildpack-deps:jessie-curl
+FROM buildpack-deps:stretch-curl
 
 # Based on https://github.com/mausch/docker-images/blob/master/miniconda3/Dockerfile
 
