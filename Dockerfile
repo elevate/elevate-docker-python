@@ -5,7 +5,7 @@ FROM buildpack-deps:stretch-curl
 COPY miniconda-version .
 COPY conda-version .
 
-RUN apt-get update && apt-get install bzip2=1.0.6-7+b3
+RUN apt-get update && apt-get install bzip2
 
 RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
     wget https://repo.continuum.io/miniconda/Miniconda3-$(cat miniconda-version)-Linux-x86_64.sh && \
